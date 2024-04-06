@@ -7,6 +7,16 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class RadioTest {
 
+    //тест опции количества станций
+    @Test
+    public void constructorTest() {
+        Radio radio = new Radio(50);
+
+        radio.setCurrentStation(35);
+
+        Assertions.assertEquals(35, radio.getCurrentStation());
+    }
+
     //тест сеттера станции
     @Test
     public void shouldSetBetweenRangeStation() {
